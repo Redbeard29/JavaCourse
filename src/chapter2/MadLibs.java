@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MadLibs {
 
-    public static void main(String[] args){
+    public static void main(String args[]){
 
         //1. Get an adjective
         System.out.println("Enter an adjective.");
