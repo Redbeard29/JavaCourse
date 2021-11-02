@@ -1,13 +1,13 @@
 package chapter3;
 
-import java.util.Scanner;
-
 /*
 To qualify for a loan, a person must make at least $30,000
 and have been working at their current job for at least 2 years.
  */
 
-public class LoanQualifier {
+import java.util.Scanner;
+
+public class LogicalOperatorLoanQualifier {
 
     public static void main(String args[]){
         //Initialize known values
@@ -22,21 +22,15 @@ public class LoanQualifier {
         System.out.println("Enter the number of years with your current employer:");
         double years = scanner.nextDouble();
 
-        scanner.close();
-
         //Use conditionals to route logic appropriately
-        if(salary >= minSalary){
-
-            if(years >= minYears){
-                System.out.println("Congrats! You qualify for the loan");
-            }
-            else{
-                System.out.println("Sorry, you must have worked at your current job for at least " + minYears + " years.");
-            }
+        if(salary >= minSalary && years >= minYears){
+            System.out.println("Congrats! You qualify for the loan");
         }
         else{
-            System.out.println("Sorry, you must earn at least $" + minSalary + " to qualify for this loan.");
+            System.out.println("Sorry, you must earn at least $" + minSalary + " and have been with your current employer for at least " + minYears + " years to qualify for this loan.");
         }
+
+
     }
 
 }
