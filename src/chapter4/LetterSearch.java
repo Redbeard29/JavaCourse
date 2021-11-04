@@ -12,11 +12,10 @@ public class LetterSearch {
 
         boolean letterFound = false;
 
-        for(int x=0; x<text.length(); x++){
+        for(int x=0; !letterFound && x<text.length(); x++){
             char currentLetter = text.charAt(x);
             if(currentLetter == 'A' || currentLetter == 'a'){
                 letterFound = true;
-                break;
             }
         }
 
