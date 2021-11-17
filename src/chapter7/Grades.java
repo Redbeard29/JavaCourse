@@ -5,7 +5,6 @@ Create a program that allows a user to enter any number of grades and provides t
 their average score, as well as the highest and lowest scores.
  */
 
-import java.io.OutputStream;
 import java.util.Scanner;
 
 public class Grades {
@@ -57,8 +56,10 @@ public class Grades {
         System.out.print("How many grades would you like to enter?");
         grades = new int[scanner.nextInt()];
 
+
         getGrades();
 
+        scanner.close();
         System.out.println("Average: " + String.format("%.2f", calculateAverage()));
         System.out.println("Highest: " + getHighestGrade());
         System.out.println("Lowest: " + getLowestGrade());
