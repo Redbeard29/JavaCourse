@@ -86,8 +86,8 @@ public class PasswordValidator {
     }
 
     public static void main(String[] args){
-        var validator = login();
 
+        var validator = login();
         validator.printPasswordRules();
 
         do{
