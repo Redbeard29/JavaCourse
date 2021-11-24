@@ -2,6 +2,14 @@ package chapter9;
 
 public class Person {
 
+    public Person(){
+        System.out.println("In Person default constructor");
+    }
+
+    public Person(String name){
+        System.out.println("In Person 2nd constructor. Name is set");
+    }
+
     private String name;
     private int age;
     private String gender;

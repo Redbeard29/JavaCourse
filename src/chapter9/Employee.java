@@ -2,6 +2,11 @@ package chapter9;
 
 public class Employee extends Person{
 
+    public Employee(){
+        super("Ben");
+        System.out.println("In Employee default constructor");
+    }
+
     private String employeeId;
     private String title;
 
