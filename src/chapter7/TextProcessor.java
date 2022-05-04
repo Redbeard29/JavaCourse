@@ -51,8 +51,8 @@ public class TextProcessor {
         countWords("I love Test Automation University");
         reverseString("Hello TAU!");
         addSpaces("HeyWorld!It'sMe,Ben");
-        String avacado = "avacado";
-        System.out.println(Arrays.toString(avacado.split("a")));
+        String avocado = "avocado";
+        System.out.println(Arrays.toString(avocado.split("a")));
     }
 
 }
